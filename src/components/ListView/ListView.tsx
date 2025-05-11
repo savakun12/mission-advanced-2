@@ -25,7 +25,7 @@ export function ListView() {
         ]}
       />
       <div className="grid w-full max-w-[320px] grid-cols-1 place-items-center gap-[20px] sm:max-w-[1200px] sm:gap-[24px] lg:grid-cols-3">
-        {products.slice(0, 9).map((data, index) => (
+        {(products ?? []).slice(0, 9).map((data, index) => (
           <Cards
             key={index}
             courseImage={data.courseImage}
